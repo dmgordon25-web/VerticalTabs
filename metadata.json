@@ -1,0 +1,5 @@
+{
+  "name": "Edge-Style Vertical Tabs",
+  "description": "A vertical tab manager Chrome Extension mimicking the aesthetic and functionality of Microsoft Edge vertical tabs.",
+  "requestFramePermissions": []
+}

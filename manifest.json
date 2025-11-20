@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Edge-Style Vertical Tabs",
+  "version": "1.1.0",
+  "description": "Vertical tabs sidebar inspired by MS Edge (Light Mode).",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "sidePanel",
+    "tabGroups"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Tabs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              edge: {
+                bg: '#f7f7f7',           // Light gray background
+                surface: '#ffffff',      // White surface for active items
+                hover: '#eaeaea',        // Light hover gray
+                active: '#ffffff',       // Active is white with shadow
+                text: '#1b1b1b',         // Dark text
+                muted: '#616161',        // Muted text
+                border: '#e5e5e5',       // Light borders
+                accent: '#0078d4'        // Edge Blue
+              }
+            },
+            fontFamily: {
+              sans: ['"Segoe UI"', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              'card': '0 2px 4px rgba(0,0,0,0.04)'
+            },
+            transitionProperty: {
+              'width': 'width',
+              'height': 'height'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar to match Edge Light */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.35);
+      }
+      
+      /* Hide drag ghost image issues */
+      .dragging {
+        opacity: 0.5;
+        background: #eaeaea;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-edge-bg text-edge-text overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
